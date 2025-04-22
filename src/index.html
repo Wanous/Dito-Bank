@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculateur IMC</title>
+  <link rel="manifest" href="../public/manifest.json?v=2" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Calculateur d'IMC</h1>
+  <form id="imc-form">
+    <label>Poids (kg) : <input type="number" id="poids" required></label><br>
+    <label>Taille (cm) : <input type="number" id="taille" required></label><br>
+    <button type="submit">Calculer</button>
+  </form>
+  <p id="resultat"></p>
+
+  <script src="app.js"></script>
+</body>
+</html>
