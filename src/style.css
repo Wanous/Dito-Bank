@@ -48,11 +48,14 @@ input, button {
 
 /* ________ID________ */
 
-/* Montant */
 #img_logo{
 	text-align: center;
-	margin-bottom:25%;
+  width: 40%;
+	margin-bottom:12%;
+  margin-top:12%;
 }
+
+/* Montant */
 
 #price{
   width :50%;
@@ -78,7 +81,7 @@ input, button {
   width: 50px;
   height: 50px;
   animation: fall linear infinite, spin linear infinite;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
 }
 
 /* Animation de la chute */

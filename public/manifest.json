@@ -1,6 +1,6 @@
 {
-  "name": "Calculateur IMC",
-  "short_name": "IMC",
+  "name": "Dito Bank",
+  "short_name": "DaDito",
   "start_url": "../src/index.html",
   "display": "standalone",
   "background_color": "#5f5959",
@@ -30,7 +30,7 @@
     "sizes": "960x540",
     "type": "image/png",
     "form_factor": "wide",
-    "label": "Résultat de l'IMC"
+    "label": "Résultat de test"
   }
 ]
 
