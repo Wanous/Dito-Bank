@@ -1,31 +1,105 @@
+/* ________Variables________ */
+
+:root {
+  --text-size:30px;
+  --text-color:#282828;
+}
+
+
+/* ________Balises importantes________ */
 body {
   font-family: sans-serif;
   text-align: center;
   padding: 2rem;
+  margin: 0;
+  overflow: hidden;
   
-background-color: #e5e5f7;
-background: radial-gradient(circle, transparent 0%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#444cf7 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #444cf7 2px, #e5e5f7 2px) -1px 0;
-background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+  background-color: #5f5959;
+  background-image:  linear-gradient(135deg, #7cc23a 25%, transparent 25%), linear-gradient(225deg, #7cc23a 25%, transparent 25%), linear-gradient(45deg, #7cc23a 25%, transparent 25%), linear-gradient(315deg, #7cc23a 25%, #f8ffad 25%);
+  background-position:  40px 0, 40px 0, 0 0, 0 0;
+  background-size: 40px 40px;
+  background-repeat: repeat;
+}
+
+p{
+  color:var(--text-color);
+  font-size:var(--text-size);
+  font-family:"TypoTexte",Arial, Helvetica, sans-serif;
+}
+
+label{
+  color:var(--text-color);
+  font-size:var(--text-size);
+  font-family:"TypoTexte",Arial, Helvetica, sans-serif;
 }
 
 input, button {
-	opacity:0.8;
   border-radius:10px;
   margin: 0.5rem;
   padding: 0.5rem;
 }
 
+/* ____Typo_____*/
+
+@font-face {
+  font-family: 'TypoTexte';
+  src: url('ressources/typo/Aberforth_Tiles.ttf') format('truetype');
+}
+
+/* ________ID________ */
+
+/* Montant */
 #img_logo{
 	text-align: center;
 	margin-bottom:25%;
 }
 
+#price{
+  width :50%;
+	opacity:0.8;
+}
+
+/* CheckBox */
 #checkbox{
-  position: fixed; /* Fixe la barre en haut */
-  top: 0; /* Position en haut */
+  position: fixed; 
+  top: 0; 
   left: 0;
 }
 
+#student{
+  transform: scale(2);
+}
+
+/* ________Animation des ditos________ */
+
+.falling-img {
+  position: absolute;
+  top: -100px;
+  width: 50px;
+  height: 50px;
+  animation: fall linear infinite, spin linear infinite;
+  opacity: 0.8;
+}
+
+/* Animation de la chute */
+@keyframes fall {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 110vh;
+  }
+}
+
+/* Animation de rotation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 
 

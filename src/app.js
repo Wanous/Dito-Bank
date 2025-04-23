@@ -14,7 +14,7 @@ function calculer() {
     result = montant / 3.5;
   }
 
-  document.getElementById("resultat").innerText = "Résultat : " + result.toFixed(2);
+  document.getElementById("resultat").innerText = result.toFixed(2) + " Dito";
 }
 
 document.getElementById("DaDitoForm").addEventListener("input", calculer);

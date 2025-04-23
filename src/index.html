@@ -3,15 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calculateur IMC</title>
+  <title>Da Dito Bank</title>
   <link rel="manifest" href="../public/manifest.json?v=2" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <img src="ressources/images/DosDitos.png" class="falling-img" style="left: 10%; animation-duration: 10s; animation-delay: 0s;">
+  <img src="ressources/images/DosDitos.png" class="falling-img" style="left: 30%; animation-duration: 12s; animation-delay: 2s;">
+  <img src="ressources/images/DosDitos.png" class="falling-img" style="left: 50%; animation-duration: 8s; animation-delay: 1s;">
+  <img src="ressources/images/DosDitos.png" class="falling-img" style="left: 70%; animation-duration: 14s; animation-delay: 3s;">
+  <img src="ressources/images/DosDitos.png" class="falling-img" style="left: 90%; animation-duration: 7s; animation-delay: 0.5s;">
+  <img src="ressources/images/DosDitos.png" class="falling-img" style="left: 20%; animation-duration: 9s; animation-delay: 0.7s;">
+  <img src="ressources/images/DosDitos.png" class="falling-img" style="left: 65%; animation-duration: 11s; animation-delay: 2s;">
+  <img src="ressources/images/DosDitos.png" class="falling-img" style="left: 15%; animation-duration: 13s; animation-delay: 1.2s;">
+  <img src="ressources/images/DosDitos.png" class="falling-img" style="left: 25%; animation-duration: 6s; animation-delay: 2.3s;">
+
+
+
   <div id = "img_logo" >
 		<img style = "width:50%;"src="ressources/images/Dito_Logo.png">
   </div>
-    <div id = "checkbox">
+  
+  <div id = "checkbox">
 		<input type="checkbox"  id="student" name="EPITA_button" checked />
 		<label for="student">EPITA ?</label>
 	</div>
@@ -21,7 +35,8 @@
 		<label>montant (en €)</label><br>
 		<input type="number" id="price" required>
   </form>
-  <p id="resultat"></p>
+
+  <p id="resultat">Veuillez entrer un montant valide.</p>
 
   <script src="app.js"></script>
 </body>
