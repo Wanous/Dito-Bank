@@ -8,11 +8,18 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Calculateur d'IMC</h1>
-  <form id="imc-form">
-    <label>Poids (kg) : <input type="number" id="poids" required></label><br>
-    <label>Taille (cm) : <input type="number" id="taille" required></label><br>
-    <button type="submit">Calculer</button>
+  <div id = "img_logo" >
+		<img style = "width:50%;"src="ressources/images/Dito_Logo.png">
+  </div>
+    <div id = "checkbox">
+		<input type="checkbox"  id="student" name="EPITA_button" checked />
+		<label for="student">EPITA ?</label>
+	</div>
+
+
+  <form id="DaDitoForm">
+		<label>montant (en €)</label><br>
+		<input type="number" id="price" required>
   </form>
   <p id="resultat"></p>
 

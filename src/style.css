@@ -2,9 +2,30 @@ body {
   font-family: sans-serif;
   text-align: center;
   padding: 2rem;
+  
+background-color: #e5e5f7;
+background: radial-gradient(circle, transparent 0%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#444cf7 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #444cf7 2px, #e5e5f7 2px) -1px 0;
+background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
+
 input, button {
+	opacity:0.8;
+  border-radius:10px;
   margin: 0.5rem;
   padding: 0.5rem;
 }
+
+#img_logo{
+	text-align: center;
+	margin-bottom:25%;
+}
+
+#checkbox{
+  position: fixed; /* Fixe la barre en haut */
+  top: 0; /* Position en haut */
+  left: 0;
+}
+
+
+
 
